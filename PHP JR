@@ -1,0 +1,58 @@
+Manipulação de Arrays e Strings
+Descrição: Exemplos de como trabalhar com arrays e strings em PHP.
+php
+Copy code
+// Exemplo de manipulação de array
+$numeros = [1, 2, 3, 4, 5];
+$quadrados = array_map(function($x) { return $x ** 2; }, $numeros);
+print_r($quadrados);
+
+// Exemplo de manipulação de string
+$mensagem = "Olá, Mundo!";
+$partes = explode(", ", $mensagem);
+print_r($partes);
+2. Estruturas Condicionais e Loops
+Descrição: Demonstração de estruturas condicionais e loops em PHP.
+php
+Copy code
+// Exemplo de estrutura condicional
+$idade = 18;
+if ($idade >= 18) {
+    echo "Você é maior de idade.";
+} else {
+    echo "Você é menor de idade.";
+}
+
+// Exemplo de loop
+for ($i = 0; $i < 5; $i++) {
+    echo $i;
+}
+3. Funções em PHP
+Descrição: Definição e chamada de funções em PHP.
+php
+Copy code
+// Exemplo de função
+function saudacao($nome) {
+    return "Olá, $nome!";
+}
+
+// Chamada de função
+$mensagem = saudacao("Alice");
+echo $mensagem;
+4. Trabalhando com Associative Arrays
+Descrição: Uso de arrays associativos para armazenar e recuperar dados.
+php
+Copy code
+// Exemplo de array associativo
+$aluno = ["nome" => "Carlos", "idade" => 20, "curso" => "Ciência da Computação"];
+echo $aluno["nome"];
+5. Manipulação de Arquivos em PHP
+Descrição: Leitura e escrita básica de arquivos em PHP.
+php
+Copy code
+// Exemplo de leitura de arquivo
+$conteudo = file_get_contents("arquivo.txt");
+echo $conteudo;
+
+// Exemplo de escrita em arquivo
+file_put_contents("novo_arquivo.txt", "Conteúdo do novo arquivo.");
